@@ -20,7 +20,7 @@ Adafruit_SharpMem display(DISPLAY_SCK_PIN, DISPLAY_MOSI_PIN, DISPLAY_SS_PIN, 144
 
 volatile int encoder_position;
 volatile uint8_t encoder_state = 0;
-volatile const int8_t offsets_lut[16] = {0, 1, -1, 0, -1, 0, 0, 1, 1, 0, 0, -1, 0, -1, 1, 0};
+volatile const int8_t offsets_lut[16] = {0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 1, 0};
 
 void encoder_isr()
 {
